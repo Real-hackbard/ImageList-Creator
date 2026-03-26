@@ -179,4 +179,5 @@ begin
 end;
 ``` 
 
-There is no limit to the number of images; it can be expanded as needed.
+There is no limit to the number of images; it can be expanded as needed.  
+This applies to both the vertical and the horizontal area.
