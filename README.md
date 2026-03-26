@@ -26,8 +26,11 @@ Image List Editor: Accessed at design time, this tool allows for adding, removin
   
 * Virtualization: ```TVirtualImageList``` only keeps required images for specific forms, optimizing memory.
 
+</br>
 
+![ImageList Creator](https://github.com/user-attachments/assets/c60887c4-5702-456f-805c-502859e71c8c)
 
+</br>
 
 
 
