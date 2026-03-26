@@ -16,7 +16,10 @@ Delphi's ```TImageList``` manages collections of same-sized images (icons/bitmap
 * ```TImageList``` (Traditional): A standard container for identical-sized images used by components like ```TToolBar```, ```TListView```, or ```TMenuItem```.
 * TImageCollection (Modern): Centralized storage for images of various sizes and formats (SVG, PNG, ICO). Images here are not displayed directly but are sourced by ```TVirtualImageList```.
 * ```TVirtualImageList``` (High-DPI): Links to a TImageCollection to dynamically produce the correct size image based on the screen's DPI, eliminating blurry or tiny icons in high-resolution, according to the Embarcadero blog post.
-Image List Editor: Accessed at design time, this tool allows for adding, removing, replacing, and clearing images, as described in the Embarcadero [DocWiki](https://docwiki.embarcadero.com/RADStudio/Athens/en/Image_List_Editor). 
+Image List Editor: Accessed at design time, this tool allows for adding, removing, replacing, and clearing images, as described in the Embarcadero [DocWiki](https://docwiki.embarcadero.com/RADStudio/Athens/en/Image_List_Editor).
+* Transparency: Supports 32-bit images (e.g., 32-bit BMP, PNG) for proper alpha blending.
+* Performance: ```TImageList``` is highly efficient, storing images in a single large bitmap.
+* Virtualization: ```TVirtualImageList``` only keeps required images for specific forms, optimizing memory.
 
 
 
