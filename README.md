@@ -174,3 +174,5 @@ begin
                       Image1.Picture.Bitmap);  // Result Image);
 end;
 ``` 
+
+There is no limit to the number of images; it can be expanded as needed.
