@@ -98,5 +98,52 @@ end;
 # How can I expand the list?
 This example combines up to 10 images. If you need more images, you must make the following changes.
 
+```pascal
+procedure JoinBitmapsVertical(Bmp1, Bmp2, Bmp3, Bmp4, Bmp5, Bmp6, Bmp7, Bmp8,
+                              Bmp9, Bmp10, ResultBmp: TBitmap);
+var
+  w, h: Integer;
+begin
+  // Calculate maximum width, add height
+  if Bmp1.Width > Bmp2.Width then
+    w := Bmp1.Width
+  else
+    w := Bmp2.Width;       // Section width of the individual images
+    h := Bmp1.Height * (Form1.ComboBox1.ItemIndex+1); // Number of individual images
 
+  // Dimensioning the target bitmap
+  ResultBmp.SetSize(w, h);
+  // Bitmap Pixel bit
+  case Form1.ComboBox3.ItemIndex of
+      0 : ResultBmp.PixelFormat := pf8bit;
+      1 : ResultBmp.PixelFormat := pf24bit;
+      2 : ResultBmp.PixelFormat := pf32bit;
+  end;
+
+  // Draw
+  ResultBmp.Canvas.Draw(0, 0, Bmp1);           // First picture above
+  ResultBmp.Canvas.Draw(0, Bmp1.Height, Bmp2); // Second image directly below
+  ResultBmp.Canvas.Draw(0, Bmp1.Height + Bmp2.Height, Bmp3);
+  ResultBmp.Canvas.Draw(0, Bmp1.Height + Bmp2.Height + Bmp3.Height, Bmp4);
+  ResultBmp.Canvas.Draw(0, Bmp1.Height + Bmp2.Height + Bmp3.Height + Bmp4.Height,
+                        Bmp5);
+  ResultBmp.Canvas.Draw(0, Bmp1.Height + Bmp2.Height + Bmp3.Height + Bmp4.Height +
+                        Bmp5.Height, Bmp6);
+  ResultBmp.Canvas.Draw(0, Bmp1.Height + Bmp2.Height + Bmp3.Height + Bmp4.Height +
+                        Bmp5.Height + Bmp6.Height, Bmp7);
+  ResultBmp.Canvas.Draw(0, Bmp1.Height + Bmp2.Height + Bmp3.Height + Bmp4.Height +
+                        Bmp5.Height + Bmp6.Height + Bmp7.Height, Bmp8);
+  ResultBmp.Canvas.Draw(0, Bmp1.Height + Bmp2.Height + Bmp3.Height + Bmp4.Height +
+                        Bmp5.Height + Bmp6.Height + Bmp7.Height + Bmp8.Height,
+                        Bmp9);
+  ResultBmp.Canvas.Draw(0, Bmp1.Height + Bmp2.Height + Bmp3.Height + Bmp4.Height +
+                        Bmp5.Height + Bmp6.Height + Bmp7.Height + Bmp8.Height +
+                        Bmp9.Height, Bmp10);
+
+  // Add another image here
+  // The order of the images should be taken into account.
+  // Increase the number in the "Count" combo box.
+
+end;
+```
 
