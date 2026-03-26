@@ -174,8 +174,8 @@ begin
                             Image9.Picture.Bitmap,
                             Image10.Picture.Bitmap,
                             Image11.Picture.Bitmap,
-                                               // Enter the next image here.
-                      Image1.Picture.Bitmap);  // Result Image);
+                                                     // Enter the next image here.
+                            Image1.Picture.Bitmap);  // Result Image);
 end;
 ``` 
 
