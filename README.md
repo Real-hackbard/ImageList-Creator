@@ -153,3 +153,24 @@ begin
 end;
 ```
 
+</br>
+
+To build the next image, use the following code.
+
+```pascal
+begin
+        Image1.Picture.Graphic := nil;
+        JoinBitmapsVertical(Image2.Picture.Bitmap,
+                      Image3.Picture.Bitmap,
+                      Image4.Picture.Bitmap,
+                      Image5.Picture.Bitmap,
+                      Image6.Picture.Bitmap,
+                      Image7.Picture.Bitmap,
+                      Image8.Picture.Bitmap,
+                      Image9.Picture.Bitmap,
+                      Image10.Picture.Bitmap,
+                      Image11.Picture.Bitmap,
+                                               // Enter the next image here.
+                      Image1.Picture.Bitmap);  // Result Image);
+end;
+``` 
