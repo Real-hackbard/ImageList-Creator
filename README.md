@@ -12,6 +12,14 @@
 
 Delphi's ```TImageList``` manages collections of same-sized images (icons/bitmaps) for UI components. Modern Delphi (10.3+) uses ```TImageCollection``` with ```TVirtualImageList``` to support High DPI scaling, automatically resizing images based on DPI. ```TVirtualImageList``` should be placed on forms, while ```TImageCollection``` resides on data modules for centralized management.
 
+### Key Delphi ImageList Components & Features:
+* ```TImageList``` (Traditional): A standard container for identical-sized images used by components like ```TToolBar```, ```TListView```, or ```TMenuItem```.
+* TImageCollection (Modern): Centralized storage for images of various sizes and formats (SVG, PNG, ICO). Images here are not displayed directly but are sourced by ```TVirtualImageList```.
+
+
+
+
+
 
 
 
