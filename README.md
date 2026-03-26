@@ -98,6 +98,8 @@ end;
 # How can I expand the list?
 This example combines up to 10 images. If you need more images, you must make the following changes.
 
+</br>
+
 ```pascal
 procedure JoinBitmapsVertical(Bmp1, Bmp2, Bmp3, Bmp4, Bmp5, Bmp6, Bmp7, Bmp8,
                               Bmp9, Bmp10, ResultBmp: TBitmap);
@@ -156,6 +158,8 @@ end;
 </br>
 
 To build the next image, use the following code.
+
+</br>
 
 ```pascal
 begin
