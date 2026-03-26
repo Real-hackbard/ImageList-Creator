@@ -37,8 +37,25 @@ Export Formats : [Bitmap](https://en.wikipedia.org/wiki/Bitmap), [JPEG](https://
 
 It is also possible to combine different image formats, which is not recommended because the color pixels do not match in some PNG files.
 
+# Use
+This article shows how to use the images in an ImageList. Delphi's TImageList provides the methods GetBitmap and GetIcon for reading the images. GetBitmap provides the image as a bitmap, and GetIcon provides it as an icon. The first parameter for both methods is the index of the image in the list. Here, the first image in the list is displayed as a bitmap:
 
+```pascal
+procedure TForm1.BitBtn1Click(Sender: TObject);
+begin
+  ImageList1.GetBitmap(0,BitBtn1.Glyph);
+end;
+```
+</br>
 
+The following procedure assigns the fifth image to the application icon:
+
+```pascal
+procedure TForm1.BitBtn1Click(Sender: TObject);
+begin
+  ImageList1.GetIcon(4,Application.Icon);
+end;
+```
 
 
 
