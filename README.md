@@ -144,6 +144,11 @@ begin
   // The order of the images should be taken into account.
   // Increase the number in the "Count" combo box.
 
+  // Example :
+  // ResultBmp.Canvas.Draw(0, Bmp1.Height + Bmp2.Height + Bmp3.Height + Bmp4.Height +
+  //                      Bmp5.Height + Bmp6.Height + Bmp7.Height + Bmp8.Height +
+  //                      Bmp9.Height + Bmp10.Height, Bmp11);
+
 end;
 ```
 
