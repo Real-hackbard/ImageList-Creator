@@ -32,7 +32,10 @@ Image List Editor: Accessed at design time, this tool allows for adding, removin
 
 </br>
 
+Import Formats : Bitmap, PNG, Icon  
+Export Formats : Bitmap, Jpg, Png, GIF, Wmf, Emf  
 
+Es lassen sich auch verschiedene Bildformate miteinander verbinden, was nicht empfehlenswert wäre, denn bei manchen PNG-Dateien stimmen die Farb-Pixel nicht überein.
 
 
 
