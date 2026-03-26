@@ -57,6 +57,41 @@ begin
 end;
 ```
 
+</br>
+
+You can add images from files or resources while the application is running. For modern versions with PNG support, ensure ColorDepth is set to cd32Bit to preserve transparency.
+
+```pascal
+procedure TForm1.LoadImagesAtRuntime;
+var
+  Bmp: TBitmap;
+begin
+  ImageList1.Clear;
+  ImageList1.ColorDepth := cd32Bit; // Important for PNG/Alpha support
+  
+  Bmp := TBitmap.Create;
+  try
+    // Load a bitmap from a file
+    Bmp.LoadFromFile('my_icon.bmp');
+    // Add to the list; returns the index of the new image
+    ImageList1.Add(Bmp, nil);
+  finally
+    Bmp.Free;
+  end;
+end;
+```
+
+</br>
+
+To retrieve an image from the list and use it elsewhere (e.g., in a TImage component), use GetBitmap.
+
+```pascal
+procedure TForm1.DisplayImage(Index: Integer);
+begin
+  // Use GetBitmap to copy the image at 'Index' into an existing TImage
+  ImageList1.GetBitmap(Index, Image1.Picture.Bitmap);
+end;
+```
 
 
 
