@@ -143,6 +143,7 @@ begin
   // Add another image here
   // The order of the images should be taken into account.
   // Increase the number in the "Count" combo box.
+  // Enter the next bitmap above and use the following code:
 
   // Example :
   // ResultBmp.Canvas.Draw(0, Bmp1.Height + Bmp2.Height + Bmp3.Height + Bmp4.Height +
