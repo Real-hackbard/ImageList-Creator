@@ -10,6 +10,8 @@
 
 </br>
 
+Delphi's ```TImageList``` manages collections of same-sized images (icons/bitmaps) for UI components. Modern Delphi (10.3+) uses ```TImageCollection``` with ```TVirtualImageList``` to support High DPI scaling, automatically resizing images based on DPI. ```TVirtualImageList``` should be placed on forms, while ```TImageCollection``` resides on data modules for centralized management.
+
 
 
 
