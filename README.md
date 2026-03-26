@@ -33,7 +33,7 @@ Image List Editor: Accessed at design time, this tool allows for adding, removin
 </br>
 
 Import Formats : [Bitmap](https://en.wikipedia.org/wiki/Bitmap), [PNG](https://en.wikipedia.org/wiki/PNG), [ICON](https://en.wikipedia.org/wiki/ICO_(file_format))  
-Export Formats : [Bitmap](https://en.wikipedia.org/wiki/Bitmap), [JPEG](https://en.wikipedia.org/wiki/JPEG), [PNG](https://en.wikipedia.org/wiki/PNG), [GIF](https://en.wikipedia.org/wiki/GIF), [WMF](https://en.wikipedia.org/wiki/Windows_Metafile), [EMF]}(https://en.wikipedia.org/wiki/Windows_Metafile)  
+Export Formats : [Bitmap](https://en.wikipedia.org/wiki/Bitmap), [JPEG](https://en.wikipedia.org/wiki/JPEG), [PNG](https://en.wikipedia.org/wiki/PNG), [GIF](https://en.wikipedia.org/wiki/GIF), [WMF](https://en.wikipedia.org/wiki/Windows_Metafile), [EMF](https://en.wikipedia.org/wiki/Windows_Metafile)  
 
 It is also possible to combine different image formats, which is not recommended because the color pixels do not match in some PNG files.
 
