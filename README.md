@@ -144,7 +144,7 @@ begin
 
   // Add another image here
   // The order of the images should be taken into account.
-  // Increase the number in the "Count" combo box.
+  // Increase the number in the "Count" ComboBox.
   // Enter the next bitmap "Bmp11" above and use the following code:
 
   // Example :
