@@ -93,6 +93,10 @@ begin
 end;
 ```
 
+</br>
+
+# How can I expand the list?
+This example combines up to 10 images. If you need more images, you must make the following changes.
 
 
 
