@@ -8,6 +8,7 @@ currently being supported with security updates.
 | Version | Supported          |
 | ------- | ------------------ |
 | 1.0.x   | :white_check_mark: |
+| 1.1.x   | :white_check_mark: BugFix Report image dimension; Add Determine the estimated size of the image. |
 
 ## Reporting a Vulnerability
 
