@@ -29,7 +29,7 @@ Image List Editor: Accessed at design time, this tool allows for adding, removin
 
 </br>
 
-![ImageList Creator](https://github.com/user-attachments/assets/c60887c4-5702-456f-805c-502859e71c8c)
+<img src="https://github.com/user-attachments/assets/e6a7bddd-f75a-4322-a195-4fe56530869f" />
 
 </br>
 
