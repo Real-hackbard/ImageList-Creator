@@ -22,9 +22,7 @@ Delphi's ```TImageList``` manages collections of same-sized images (icons/bitmap
 Image List Editor: Accessed at design time, this tool allows for adding, removing, replacing, and clearing images, as described in the Embarcadero [DocWiki](https://docwiki.embarcadero.com/RADStudio/Athens/en/Image_List_Editor).
 
 * Transparency: Supports 32-bit images (e.g., 32-bit BMP, PNG) for proper alpha blending.
-  
 * Performance: ```TImageList``` is highly efficient, storing images in a single large bitmap.
-  
 * Virtualization: ```TVirtualImageList``` only keeps required images for specific forms, optimizing memory.
 
 </br>
